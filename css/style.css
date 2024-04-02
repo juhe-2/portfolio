@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'hb';
+    src: url('../font/Human-beomseok.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'hb';
+}
+
+a {text-decoration: none;}
+ul {list-style: none;}
+
+h1 {font-size: 8rem; font-weight: 300;}
+h2 {font-size: 3.5rem; font-weight: 200;}
+h3 {font-size: 3rem; font-weight: 180;}
+h4 {font-size: 2rem; font-weight: 100;}
+
+.section:nth-child(1) {
+    background: url('../images/first_bg.png')no-repeat center/contain;
+}
+.section:nth-child(2) {
+    background: url('../images/second_bg.png')no-repeat center/contain;
+}
+.section:nth-child(3) {
+    background: url('../images/third_bg.png')no-repeat center/contain;
+}
+.section:nth-child(4) {
+    background: url('../images/fourth_bg.png')no-repeat center/contain;
+}
+.section:nth-child(5) {
+    background: url('../images/last_bg.png')no-repeat center/contain;
+}
+
+/* 메인 */
+.main .mouse {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: mouse 1s ease-in-out infinite;
+}
+@keyframes mouse {
+    0% {
+        bottom: 1rem;
+    }
+    50% {
+        bottom: 1.5rem;
+    }
+    100% {
+        bottom: 1rem;
+    }
+}
+/* 소개 */
+
+.profile > h2 {
+    background: url('../images/label.png')no-repeat center/180px 80px;
+    height: 88px;
+    padding-top: 15px;
+}
+.profile h4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px 0 15px 0;
+}
+.about{
+    display: flex;
+    height: 530px;
+}
+.profile .container .about-me {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 400px;
+    top: -75px;
+}
+.profile .container .about-me > img {
+    width: 300px;
+    height: 300px;
+}
+.profile .container .about-me .introduce {
+    background: url('../images/memo-pink.png')no-repeat center/180px 180px;
+    padding-top: 205px;
+    position: relative;
+}
+.profile .container .about-me .introduce .content {
+    position: absolute;
+    left: 198px;
+    bottom: 60px;
+}
+.profile .container .about-me p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.profile .container .about-me button {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+.profile .container .int {
+    max-width: 70rem;
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+.profile .container .int .edu {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    right: -355px;
+}
+.profile .container .int .tool {
+    position: relative;
+    top: 255px;
+    right: 200px;
+    width: 800px;
+    height: 250px;
+}
+.profile .container .int .tool img {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+}
+.profile .container .int .tool .big {
+    height: 100px;
+}
+.profile .container .int p {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    margin: 0 0 1.6rem 0;
+}
+
+/* 상세페이지 */
+.detail-wrap {
+    height: 645px;
+}
+.detail-wrap > h2 {
+    background: url('../images/label.png')no-repeat center/260px 92px;
+    height: 92px;
+    padding-top: 19px;
+}
+.detail-wrap .detail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.detail-page a {
+    width: 430px;
+    height: 300px;
+    display: block;
+    position: relative;
+}
+.detail-page {
+    display: flex;
+    margin-top: 60px;
+}
+.detail-page a img {
+    width: 330px;
+    height: 430px;
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    opacity: 0.6;
+    transition: all .5s;
+    box-shadow: 3px 3px 3px #00000031;
+}
+.detail-page .tape {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    z-index: 999;
+    bottom: 54%;
+    left: 35px;
+}
+.detail-page a img:hover {
+    opacity: 1;
+    transform: scale(1.07);
+}
+/* 클론코딩 */
+.clone-wrap > h2 {
+    background: url('../images/label.png')no-repeat center/270px 97px;
+    height: 92px;
+    padding-top: 15px;;
+}
+.clone-wrap > h2 img {
+    z-index: 3;
+}
+.clone-coding {
+    display: flex;
+    position: relative;
+    bottom: 70px;
+    right: 64px;
+    justify-content: space-between;
+}
+.clone-coding img {
+    width: 450px;
+    height: 450px;
+    float: left;
+}
+.clone-coding .c-page1 {
+    padding-left: 360px;
+}
+.clone-coding .c-page2 {
+    margin-left: 200px;
+}
+.clone-coding button {
+    width: 110px;
+    height: 50px;
+    position: relative;
+    top: 483px;
+    left: -333px;
+    font-size: 1.2rem;
+}
+/* 영상 */
+.video-wrap > h2 {
+    background: url('../images/label.png')no-repeat center/150px 90px;
+    height: 415px;
+    text-align: center;
+    padding-top: 180px;
+}
+
+/* ? */
+.fp-slidesNav ul {
+    text-align: center;
+}
+.fp-tableCell {
+    text-align: center;
+    height: 100px !important;
+}
+
+/* footer */
+.fp-auto-height {
+    background: none;
+    border-top: 2px solid #ccc;
+}
+
+element .style {
+    height: 635px;
+ }
